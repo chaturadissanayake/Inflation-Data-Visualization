@@ -5,40 +5,40 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: flex-start; /* Align items towards the top */
-    min-height: 100vh; /* Ensure body takes full height */
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
     font-size: 16px;
-    padding-top: 20px; /* Add padding to the top for breathing room */
+    padding-top: 20px;
 }
 
 .container {
     background-color: #FCFAEE; /* Light cream background */
-    padding: 20px; /* Maintain reduced padding */
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
     width: 600px;
     max-width: 90vw;
-    margin-top: 0; /* Remove top margin */
-    margin-bottom: 20px; /* Ensure space at the bottom */
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 /* Header Styles */
 .header {
-    text-align: center; /* Center the header content */
+    text-align: center;
 }
 
 .header h1 {
     font-size: 24px;
     color: #B8001F; /* Accent red for the heading */
-    margin-bottom: 15px; /* Reduce spacing below the title */
+    margin-bottom: 15px;
 }
 
 .header p {
     font-size: 16px;
     color: #507687; /* Muted teal for subtitle */
-    margin-top: -5px; /* Fine-tune spacing */
-    margin-bottom: 20px; /* Reduce spacing below subtitle */
+    margin-top: -5px;
+    margin-bottom: 20px;
 }
 
 /* Card-like box for inputs */
@@ -46,7 +46,7 @@ body {
     background-color: #FCFAEE; /* Light cream background for card */
     border: 2px solid #507687; /* Teal border */
     border-radius: 10px;
-    padding: 20px; /* Reduce padding inside the card */
+    padding: 20px;
     margin-bottom: 20px;
     width: 516px;
     max-width: 100%;
@@ -67,8 +67,8 @@ body {
 /* Label styling */
 .input-group label {
     font-size: 16px;
-    color: #507687; /* Teal for labels */
-    margin-bottom: 8px; /* Reduce margin */
+    color: #507687;
+    margin-bottom: 8px;
     text-align: left;
 }
 
@@ -78,60 +78,16 @@ body {
     padding: 10px;
     font-size: 16px;
     border-radius: 6px;
-    border: 1.8px solid #507687; /* Teal border for input */
-    background-color: #FFFFFF; /* White background for input */
-    color: #384B70; /* Dark blue text inside input */
+    border: 1.8px solid #507687;
+    background-color: #FFFFFF;
+    color: #384B70;
     box-sizing: border-box;
-    min-height: 20px;
-    appearance: none;
 }
 
 /* Style for the calculate button */
-.calculate-button {
-    width: 100%;
-    padding: 12px; /* Reduced button padding */
-    font-size: 18px;
-    font-weight: 700;
-    color: #FCFAEE; /* Light cream text */
-    background-color: #B8001F; /* Red button */
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    margin-top: 20px;
-    transition: background-color 0.3s;
-}
-
-.calculate-button:hover {
-    background-color: #A7001A; /* Darker red on hover */
-}
-
-/* Custom styling for the stepper input (number input arrows) */
-input[type="number"] {
-    -moz-appearance: textfield;
-    appearance: none;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-
-/* Chart Container */
-.chart-container {
-    margin-top: 20px; /* Reduce space above the chart */
-    max-width: 100%;
-}
-
-/* Centering Button */
-.button-container {
-    display: flex;
-    justify-content: center;
-}
-
 button {
-    background-color: #B8001F; /* Red button for consistency */
-    color: #FCFAEE; /* Light cream text */
+    background-color: #B8001F;
+    color: #FCFAEE;
     border: none;
     padding: 12px 20px;
     font-size: 16px;
@@ -142,7 +98,13 @@ button {
 }
 
 button:hover {
-    background-color: #A7001A; /* Darker red on hover */
+    background-color: #A7001A;
+}
+
+/* Chart Container */
+.chart-container {
+    margin-top: 20px;
+    max-width: 100%;
 }
 
 /* Source Note */
@@ -150,7 +112,7 @@ button:hover {
     margin-top: 20px;
     text-align: left;
     font-size: 12px;
-    color: #507687; /* Muted teal color */
+    color: #507687;
 }
 
 /* Footer styling */
@@ -173,13 +135,37 @@ button:hover {
     font-size: 12px;
     flex: 1;
     display: flex;
-    justify-content: center; /* Center content within each section */
+    justify-content: center;
 }
 
 .footer .legal {
-    justify-content: flex-start; /* Align to the left */
+    justify-content: flex-start;
 }
 
 .footer .designed-by {
-    justify-content: flex-end; /* Align to the right */
+    justify-content: flex-end;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    .card, .input-group, button {
+        width: 100%;
+    }
+    body {
+        font-size: 14px;
+    }
+    .header h1 {
+        font-size: 20px;
+    }
+    .header p {
+        font-size: 14px;
+    }
+    .chart-container {
+        width: 100%;
+        height: auto;
+    }
 }
