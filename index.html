@@ -3,31 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inflation Data Visualization</title>
+    <title>Inflation Data Wage Comparison Calculator</title>
+    <meta name="description" content="Visualize monthly inflation trends and compare your real wage adjusted for inflation using the Colombo Consumer Price Index (CCPI) and National Consumer Price Index (NCPI).">
+    <meta name="keywords" content="Inflation, Wage Comparison, Inflation Calculator, CCPI, NCPI, Sri Lanka, Inflation Trends, Data Visualization">
+    <meta name="author" content="Chatura Dissanayake">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="container">
-<!-- Header Section -->
-<header class="header">
-    <h1>Inflation Data Visualization</h1>
-    <p>Track monthly inflation trends and wage comparisons at a glance.</p>
-</header>
+        <!-- Header Section -->
+        <header class="header">
+            <h1>Inflation Data Visualization</h1>
+            <p>Track monthly inflation trends and wage comparisons at a glance.</p>
+        </header>
 
         <!-- Input Boxes Card -->
         <div class="card">
             <div class="input-group">
                 <label for="jan-salary">Your Salary in January 2022</label>
-                <input type="number" id="jan-salary" placeholder="Enter 2022 alary" min="0">
+                <input type="number" id="jan-salary" placeholder="Enter 2022 Salary" min="0">
             </div>
             <div class="input-group">
                 <label for="current-salary">Your Salary Now</label>
                 <input type="number" id="current-salary" placeholder="Enter current salary" min="0">
             </div>
         </div>
-
-        <br><!-- Calculate Button -->
+<br>
+        <!-- Calculate Button -->
         <div class="button-container">
             <button id="calculate-btn">Calculate</button>
         </div>
@@ -37,8 +40,8 @@
             <canvas id="myComboChart" width="800" height="400"></canvas>
         </div>
 
-    <!-- Source Note -->
-    <div class="source-note">
+        <!-- Source Note -->
+        <div class="source-note">
             <p><em>Source: This calculator uses the Colombo Consumer Price Index and excludes recent tax increases.</em></p>
         </div>
     </div>
@@ -50,7 +53,7 @@
         </div>
         <div class="designed-by">
             <p>Designed by Chatura Dissanayake | consultchatura@gmail.com</p>
-</div>
+        </div>
     </footer>
 
     <!-- Link to External JavaScript File -->
