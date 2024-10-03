@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inflation Data Visualization</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+<!-- Header Section -->
+<header class="header">
+    <h1>Inflation Data Visualization</h1>
+    <p>Track monthly inflation trends and wage comparisons at a glance.</p>
+</header>
+
+        <!-- Input Boxes Card -->
+        <div class="card">
+            <div class="input-group">
+                <label for="jan-salary">Your Salary in January 2022</label>
+                <input type="number" id="jan-salary" placeholder="Enter 2022 alary" min="0">
+            </div>
+            <div class="input-group">
+                <label for="current-salary">Your Salary Now</label>
+                <input type="number" id="current-salary" placeholder="Enter current salary" min="0">
+            </div>
+        </div>
+
+        <br><!-- Calculate Button -->
+        <div class="button-container">
+            <button id="calculate-btn">Calculate</button>
+        </div>
+
+        <!-- Chart Canvas -->
+        <div class="chart-container">
+            <canvas id="myComboChart" width="800" height="400"></canvas>
+        </div>
+
+    <!-- Source Note -->
+    <div class="source-note">
+            <p><em>Source: This calculator uses the Colombo Consumer Price Index and excludes recent tax increases.</em></p>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="legal">
+            <p>&copy; 2024 Inflation Data Visualization. All rights reserved.</p>
+        </div>
+        <div class="designed-by">
+            <p>Designed by Chatura Dissanayake | consultchatura@gmail.com</p>
+</div>
+    </footer>
+
+    <!-- Link to External JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>

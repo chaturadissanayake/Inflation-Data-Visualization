@@ -1,0 +1,185 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #384B70; /* Deep blue background */
+    color: #FCFAEE; /* Light cream text */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align items towards the top */
+    min-height: 100vh; /* Ensure body takes full height */
+    font-size: 16px;
+    padding-top: 20px; /* Add padding to the top for breathing room */
+}
+
+.container {
+    background-color: #FCFAEE; /* Light cream background */
+    padding: 20px; /* Maintain reduced padding */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    width: 600px;
+    max-width: 90vw;
+    margin-top: 0; /* Remove top margin */
+    margin-bottom: 20px; /* Ensure space at the bottom */
+}
+
+/* Header Styles */
+.header {
+    text-align: center; /* Center the header content */
+}
+
+.header h1 {
+    font-size: 24px;
+    color: #B8001F; /* Accent red for the heading */
+    margin-bottom: 15px; /* Reduce spacing below the title */
+}
+
+.header p {
+    font-size: 16px;
+    color: #507687; /* Muted teal for subtitle */
+    margin-top: -5px; /* Fine-tune spacing */
+    margin-bottom: 20px; /* Reduce spacing below subtitle */
+}
+
+/* Card-like box for inputs */
+.card {
+    background-color: #FCFAEE; /* Light cream background for card */
+    border: 2px solid #507687; /* Teal border */
+    border-radius: 10px;
+    padding: 20px; /* Reduce padding inside the card */
+    margin-bottom: 20px;
+    width: 516px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Label styling */
+.input-group label {
+    font-size: 16px;
+    color: #507687; /* Teal for labels */
+    margin-bottom: 8px; /* Reduce margin */
+    text-align: left;
+}
+
+/* Input styling */
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1.8px solid #507687; /* Teal border for input */
+    background-color: #FFFFFF; /* White background for input */
+    color: #384B70; /* Dark blue text inside input */
+    box-sizing: border-box;
+    min-height: 20px;
+    appearance: none;
+}
+
+/* Style for the calculate button */
+.calculate-button {
+    width: 100%;
+    padding: 12px; /* Reduced button padding */
+    font-size: 18px;
+    font-weight: 700;
+    color: #FCFAEE; /* Light cream text */
+    background-color: #B8001F; /* Red button */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.calculate-button:hover {
+    background-color: #A7001A; /* Darker red on hover */
+}
+
+/* Custom styling for the stepper input (number input arrows) */
+input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: none;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Chart Container */
+.chart-container {
+    margin-top: 20px; /* Reduce space above the chart */
+    max-width: 100%;
+}
+
+/* Centering Button */
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background-color: #B8001F; /* Red button for consistency */
+    color: #FCFAEE; /* Light cream text */
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #A7001A; /* Darker red on hover */
+}
+
+/* Source Note */
+.source-note {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 12px;
+    color: #507687; /* Muted teal color */
+}
+
+/* Footer styling */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.footer .legal, 
+.footer .designed-by {
+    font-size: 12px;
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center content within each section */
+}
+
+.footer .legal {
+    justify-content: flex-start; /* Align to the left */
+}
+
+.footer .designed-by {
+    justify-content: flex-end; /* Align to the right */
+}
