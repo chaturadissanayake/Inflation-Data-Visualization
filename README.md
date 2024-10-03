@@ -1,4 +1,4 @@
-![screenshot-inflation-data-visualization](https://github.com/chaturadissanayake/Inflation-Data-Wage-Comparison-Calculator/blob/cd7282d28f7a52f907628bd628017ee6fbb362ee/Images/screenshot-inflation-data-visualization.png)
+![screenshot-inflation-data-visualization](https://github.com/chaturadissanayake/Inflation-Data-Wage-Comparison-Calculator/blob/62fa5ddf009e243a22075ebba74423bdc2eb0578/Images/screenshot-inflation-data-visualization.png)
 
 **Inflation Data Wage Comparison Calculator** is a tool that allows users to visualize inflation trends over time and compare their wages adjusted for inflation. Utilizing the Colombo Consumer Price Index (CCPI) and National Consumer Price Index (NCPI), this tool helps users understand how inflation impacts their purchasing power.
 
